@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>THE 7TH ART</h1>
+    <p class="lead">WebMovies is a free web site for sharing, rating and storing links of your favorite movies.</p>
+    <p><a href="@Url.Action("Index", "UserProfiles")" class="btn btn-primary btn-lg">Register in&raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Rate the films</h2>
+        <p>
+            Leave your comments and feedback.
+        </p>
+        <p><a class="btn btn-default" href="@Url.Action("Index", "Comments")">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Share your movies</h2>
+        <p></p>
+        <p><a class="btn btn-default" href="@Url.Action("Index", "Links")">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Link your favorites</h2>
+        <p>You can easily find a link to your wanted movie and add it here.</p>
+        <p><a class="btn btn-default" href="@Url.Action("Index", "Favorites")">Learn more &raquo;</a></p>
+    </div>
+</div>
